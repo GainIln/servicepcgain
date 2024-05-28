@@ -1,11 +1,30 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<h4 class="aio-icon-title">Юридический адрес:</h4>	
-		
-<?
-include ("https://gainiln.github.io/servicepcgain/index.php");
-?>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+    $.ajax({
+      url: "index.php", // Путь до вашего PHP-файла
+      type: "get", // Метод передачи
+      dataType: 'HTML', // Тип данных
+      success: function(response){
+        $('#result').html(response);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        $('#result').html('Ошибка: ' + textStatus + ' | ' + errorThrown);
+      },
+   });
+
+});
+</script>
+</head>
+<body>
 
 
 
-</html>
+<table id="result"></table>
+
+</body>
+</html> 
