@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="style1.css" >
+	</head>
+
+<body>
+		<div class="question-block" id="question1">
+            <h1>Вопрос 1: Вы увидели синий экран?</h1>
+            <div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question1" value="1"> <span>Да</span></label>
+			</div>
+			
+			<div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question1" value="0"> <span>Нет</span></label>
+			</div>	
+        </div>
+		
+        <div class="question-block" id="question2">
+            <h1>Вопрос 2: Компьютер не включается?</h1>
+			
+            <div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question2" value="1"> <span>Да</span></label>
+			</div>
+			
+			<div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question2" value="0"> <span>Нет</span></label>
+			</div>
+			
+			
+			
+        </div>
+        <div class="question-block" id="question3">
+            <h1>Вопрос 3: У вас проблемы с доступом в Интернет?</h1>
+            <div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question3" value="1"> <span>Да</span></label>
+			</div>
+			
+			<div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question3" value="0"> <span>Нет</span></label>
+			</div>
+			
+        </div>
+        <div class="question-block" id="question4">
+            <h1>Вопрос 4: Замечены проблемы с звуком?</h1>
+            <div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question4" value="1"> <span>Да</span></label>
+			</div>
+			
+			<div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question4" value="0"> <span>Нет</span></label>
+			</div>
+        </div>
+        <div class="question-block" id="question5">
+            <h1>Вопрос 5: Компьютер заметно замедлил работу?</h1>
+			<div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question5" value="1"> <span>Да</span></label>
+			</div>
+			
+			<div class="radio">
+				<label class="custom-radio"> <input type="radio" name="question5" value="0"> <span>Нет</span></label>
+			</div>
+			
+			
+        </div>
+		<div class="question-block_button" id="question777">
+			<button class="button-36" id="btn1" role="button" onclick="calculateResult();">Проверить результаты</button>
+			
+		</div>
+
+<script src="app.js"></script>
+		
+<h2 id="result-text"></h2>	
+<div id="list" ></div>
+
+
+
+</body>
+</html>
