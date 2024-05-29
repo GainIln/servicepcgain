@@ -61,7 +61,7 @@
     //creating connection to database
     $con = mysqli_connect($hostname, $username, $password, $dbname);
 	
-	$con->set_charset('utf8');
+    #$con->set_charset('utf8');
 
 	
     //checking if connection is working or not
